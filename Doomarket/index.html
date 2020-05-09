@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<title>Doomarket</title>
+		<link rel="stylesheet" href="css/main.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap&subset=cyrillic-ext" rel="stylesheet">
+	</head>
+	<body>
+		<header class="header">
+			<div class="header_container">
+				<div class="header_logo">
+					doomarket
+				</div>
+				<!-- /.header_logo -->
+				<form class="header_serch">
+					<div class="header_serch-input-wrapper">
+						<input class="header_serch-input" type="text" placeholder="Найти...">
+					</div>
+					<!-- /.header_serch-input-wrapper -->
+					<div class="header_search-dropdown">
+
+
+
+						<div data-select class="header-select">
+							<div data-select-title class="header-select__title">Категории</div>
+							<div class="header-select__dropdown hidden">
+								<div data-select-item="Бытовая" class="header-select__dropdown-item">Бытовая техника</div>
+								<div data-select-item="Компьютеры" class="header-select__dropdown-item">Компьютеры, ноутбуки</div>
+								<div data-select-item="Смартфоны" class="header-select__dropdown-item">Смартфоны и планшеты</div>
+								<div data-select-item="Часы" class="header-select__dropdown-item">Часы</div>	
+							</div>
+						</div>
+
+					<!-- На случай если js не работает есть скрытый select -->
+					<select class="hidden" name="" id="selectReal">
+						<option value="none">Категории</option>
+						<option value="Бытовая">Бытовая техника</option>
+						<option value="Компьютеры">Компьютеры, ноутбуки</option>
+						<option value="Смартфоны">Смартфоны и планшеты</option>
+						<option value="Часы">Часы</option>
+					</select>
+					<!-- /Скрытый select -->
+					</div>
+					<!-- /.header_search-dropdown -->
+					<div class="header_search-button-wrapper">
+						<button class="header_search-button" type="submit">
+							Поиск</button>
+					</div>
+					<!-- /.header_search-button -->
+				</form>
+				<!-- /.header_serch -->
+				<div class="header_buttons">
+					
+				</div>
+				<!-- /.header_buttons -->
+			</div>
+			<!-- /.header_container -->
+		</header>
+		<script src="js/main.js"></script>
+		</body>
+</html>
