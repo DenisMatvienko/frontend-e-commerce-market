@@ -1,8 +1,29 @@
 // import base
+
 @import "./base/base";
 
+@import "./base/variables";
+
+
+
+
+
 // import blocks
+
+// import header
 @import "./blocks/header";
 
 // import castom select
 @import "./blocks/header-select-dropdown-castom";
+
+// import buttons after select
+@import "./blocks/header-link";
+
+// import navigation under header
+@import "./blocks/header-nav";
+
+// import mega menu into navigation
+@import "./blocks/header-mega-menu-link";
+
+// import drodown in nav
+@import "./blocks/nav-dropdown";
