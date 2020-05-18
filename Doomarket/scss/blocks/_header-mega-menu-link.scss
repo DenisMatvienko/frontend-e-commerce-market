@@ -10,7 +10,13 @@
 		text-decoration: none;
 
 		svg {
-			fill: $blue;	
+			fill: $blue;
+			transition: 0.2s fill ease-in;	
+		}
+
+		.header-mega-menu-link_text {
+			color: $blue;
+			transition: 0.2s color ease-in;	
 		}
 		
 	}
@@ -19,7 +25,7 @@
 .header-mega-menu-link_icon {
 	margin-right: 22px;
 	svg {
-		fill: gray;
+		fill: $c-txt;
 	}
 
 
@@ -30,18 +36,12 @@
 	font-size: 14px;
 	font-weight: 500;
 	line-height: 1;
-
-		&:hover {
-			color: $blue;
-			text-decoration: none;
-		} 
 }
 
 .nav-categories__dropdown {
 	display: none;
     position: absolute;
     width: 500px;
-    height: 600px;
     top: 166px;
     left: -450px;
     right: 250px;
@@ -80,10 +80,12 @@
 	line-height: 1;
 	padding-bottom: 50px;
 	justify-content: left;
+	transition: transform 0.4s ease-in;;
 
 		&:hover {
 			color: $blue;
-			font-size: 30px;
+			transform: translateY(-5px);
+			transition: 0.2s color ease-in;
 			text-decoration: none;
 		} 
 }

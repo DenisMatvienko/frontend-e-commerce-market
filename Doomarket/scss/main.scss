@@ -6,28 +6,25 @@
 @import "./base/variables";
 
 
-
-
-
 // import blocks
 //------------------//
 // import header
-@import "./blocks/header";
+@import "./blocks/_header";
 
 // import castom select
-@import "./blocks/header-select-dropdown-castom";
+@import "./blocks/_header-select-dropdown-castom";
 
 // import buttons after select
-@import "./blocks/header-link";
+@import "./blocks/_header-link";
 
 // import navigation under header
-@import "./blocks/header-nav";
+@import "./blocks/_header-nav";
 
 // import mega menu into navigation
-@import "./blocks/header-mega-menu-link";
+@import "./blocks/_header-mega-menu-link";
 
 // import drodown in nav
-@import "./blocks/nav-dropdown";
+@import "./blocks/_nav-dropdown";
 
 // import carousel under header
 @import "./blocks/_carousel";
@@ -40,3 +37,14 @@
 
 // import promo section - Items
 @import "./blocks/_promo-section-item";
+
+// import main content in page
+@import "./blocks/_main";
+
+// import navigation-sidebar
+@import "./blocks/_navigation";
+
+
+// import mixins
+//------------------//
+@import "./mixins/_card"
