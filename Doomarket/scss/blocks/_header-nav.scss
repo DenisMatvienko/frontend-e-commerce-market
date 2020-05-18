@@ -37,6 +37,7 @@
 
 	&:hover {
 		color: $blue;
+		transition: 0.2s color ease-in;
 		text-decoration: none;
 	}
 }

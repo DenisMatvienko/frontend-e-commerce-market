@@ -13,9 +13,11 @@
 	&:hover {
 		color: $blue;
 		text-decoration: none;
+		transition: 0.2s color ease-in;
 
 		.icon-svg {
-				fill: $blue;
+			fill: $blue;
+			transition: 0.2s fill ease-in;
 		}
 	}
 }

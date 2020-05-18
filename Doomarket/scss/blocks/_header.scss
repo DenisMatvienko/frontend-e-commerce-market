@@ -30,6 +30,7 @@
 
 		&:hover {
 		color: $blue;
+		transition: 0.2s color ease-in;
 		text-decoration: none;
 		cursor: pointer;
 	}
@@ -88,9 +89,14 @@
  align-items: center;
  width: 100%;
  height: 100%;
+ fill: $dc-txt;
  cursor: pointer;
  &:hover {
  	background-color: #303030;
+ 	svg {
+		fill: $blue;
+		transition: 0.2s fill ease-in;
+	}
  }
 }
 

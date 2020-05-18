@@ -57,9 +57,11 @@
 .nav-dropdown:hover {
     .nav-dropdown__title {
         color: $blue;
+        transition: 0.2s color ease-in;
     }
     svg {
         fill: $blue;
+        transition: 0.2s fill ease-in;
     }
     .nav-dropdown__dropdown {
         display: block;
@@ -81,6 +83,7 @@ a.nav-dropdown__dropdown-item {
     }
     &:hover {
     	color: $blue;
+        transition: 0.2s color ease-in;
         background-color: #303030;
     }
 }

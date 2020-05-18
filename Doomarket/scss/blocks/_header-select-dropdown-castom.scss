@@ -6,6 +6,20 @@
 	justify-content: center;
 	align-items: center;
 	cursor: pointer;
+
+	&:hover{
+		background-color: #303030;
+
+		svg {
+			fill: $blue;
+			transition: 0.2s fill ease-in;
+		}
+
+		.header-select__title {
+			color: $blue;
+			transition: 0.2s color ease-in;
+		}
+	}
 }
 
 .header-select__title {
@@ -64,6 +78,7 @@
 	&:hover {
 		color: $blue;
 		background-color: #303030;
+		transition: 0.2s color ease-in;
 	}
 }
 
