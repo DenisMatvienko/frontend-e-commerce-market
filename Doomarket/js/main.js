@@ -4,5 +4,6 @@ $(document).ready(function(){
   	nav: true,
   	navText: [],
   	loop: true,
+  	autoplay: true, //автопрокрутка
   });
 });
