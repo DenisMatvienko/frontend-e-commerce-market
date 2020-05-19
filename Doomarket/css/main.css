@@ -59,7 +59,7 @@ h1, h2, h3, h4, h5, h6, p {
 
 .header_serch {
   display: flex;
-  width: 468px;
+  width: 400px;
   height: 50px;
   border-radius: 4px;
   border: 2px solid #303030; }
@@ -101,7 +101,7 @@ h1, h2, h3, h4, h5, h6, p {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100%;
+  width: 50px;
   height: 100%;
   fill: #4D4D4D;
   cursor: pointer; }
@@ -688,9 +688,11 @@ a.nav-dropdown__dropdown-item {
   width: 255px;
   flex-shrink: 0px;
   margin-right: 30px; }
+  .main__column-left > * + * {
+    margin-top: 29px; }
 
-.navigation {
-  margin-bottom: 100px; }
+.main__column-right {
+  flex-grow: 1; }
 
 .navigation__list {
   margin: 0;
@@ -739,7 +741,120 @@ a.nav-dropdown__dropdown-item {
   margin-left: auto;
   padding-right: 20px; }
 
-.navigation {
+.info-block {
+  padding: 30px 20px;
+  height: 336px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: box-shadow 0.1s ease-in, transform 0.2s ease-in; }
+  .info-block:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 3px 10px black;
+    cursor: pointer; }
+    .info-block:hover .info-block__title {
+      color: #1875f0;
+      transition: 0.2s color ease-in; }
+    .info-block:hover .info-block__subtitle {
+      color: #1875f0;
+      transition: 0.2s color ease-in; }
+
+.info-block__title {
+  margin-bottom: 15px;
+  color: #A6A6A6;
+  font-style: 20px;
+  font-weight: 500;
+  line-height: 1; }
+
+.info-block__subtitle {
+  color: #4D4D4D;
+  font-style: 14px;
+  font-weight: 500;
+  line-height: 2; }
+
+.info-block--background-img {
+  background-color: #262626;
+  background-image: url("./../img/banner/game-pc.jpg"); }
+  .info-block--background-img:hover {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.01) 100%), url("./../img/banner/game-pc.jpg"); }
+
+.info-block--background-img_2 {
+  background-color: #262626;
+  background-image: url("./../img/banner/cell-phones.jpg"); }
+  .info-block--background-img_2:hover {
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.01) 100%), url("./../img/banner/cell-phones.jpg"); }
+
+.tabs {
+  padding: 0px 40px;
+  display: flex;
+  width: 100%;
+  height: 60px;
+  margin-bottom: 29px;
+  transition: box-shadow 0.1s ease-in, transform 0.2s ease-in; }
+  .tabs:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 3px 10px black;
+    background-color: #303030; }
+    .tabs:hover .tabs__icon-arrow {
+      fill: #1875f0; }
+
+.tabs__link {
+  height: 100%;
+  padding-top: 20px;
+  color: #4D4D4D; }
+  .tabs__link + * {
+    margin-left: 8px; }
+  * + .tabs__link {
+    margin-left: 8px; }
+
+.tabs__icon-arrow {
+  padding-top: 20px;
+  fill: #A6A6A6; }
+
+.card {
+  padding: 20px;
+  width: 256px;
+  transition: box-shadow 0.1s ease-in; }
+  .card:hover {
+    box-shadow: 0 3px 10px black;
+    background-color: #303030; }
+
+.card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+
+.card__sale {
+  border-radius: 4px;
+  background-color: #1A1A1A;
+  padding: 6px 10px;
+  color: #4D4D4D;
+  font-weight: 900;
+  font-size: 10px;
+  line-height: 1;
+  text-transform: uppercase; }
+  .card__sale:hover {
+    color: #A6A6A6;
+    background-color: #1875f0;
+    transition: 0.2s color ease-in, 0.2s background-color ease-in;
+    cursor: default; }
+
+.card__icon-btns {
+  display: flex;
+  align-items: center; }
+
+.card__icon-btn {
+  padding: 0;
+  background: transparent;
+  border: none;
+  margin-left: 25px;
+  fill: #4D4D4D; }
+  .card__icon-btn:hover {
+    fill: #1875f0;
+    cursor: pointer; }
+
+.navigation, .info-block, .tabs, .card {
   border-radius: 5px;
   background-color: #262626; }
 

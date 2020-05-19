@@ -10,8 +10,12 @@
 	width: 255px;
 	flex-shrink: 0px;
 	margin-right: 30px;
+
+	& > * + * {
+		margin-top: 29px;
+	}
 }
 
 .main__column-right {
-
+	flex-grow: 1;
 }

@@ -1,0 +1,60 @@
+.cards-wrapper {
+	
+}
+
+.card {
+	@extend %mixin-card;
+	padding: 20px;
+	width: 256px;
+	transition: box-shadow 0.1s ease-in;
+
+	&:hover {
+		// transform: translateY(-4px);
+		box-shadow: 0 3px 10px rgba(0, 0, 0, 10);
+		background-color: #303030;
+	}
+}
+
+.card__header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card__sale {
+	// height: 21px;
+	border-radius: 4px;
+	background-color: $back_bgc;
+	padding: 6px 10px;
+
+	color: $dc-txt;
+	font-weight: 900;
+	font-size: 10px;
+	line-height: 1;
+	text-transform: uppercase;
+
+	&:hover {
+		color: $c-txt;
+		background-color: $blue;
+		transition: 0.2s color ease-in, 0.2s background-color ease-in;
+		cursor: default;
+	}
+}
+
+.card__icon-btns {
+	display: flex;
+	align-items: center;
+}
+
+.card__icon-btn {
+	padding: 0;
+	background: transparent;
+	border: none;
+	margin-left: 25px;
+	fill: $dc-txt;
+
+	&:hover {
+		fill: $blue;
+		cursor: pointer;
+	}
+}
