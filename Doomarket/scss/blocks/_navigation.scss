@@ -1,5 +1,6 @@
 .navigation {
 	@extend %mixin-card;
+	width: 210px;
 }
 
 .navigation__list {

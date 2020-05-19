@@ -1,40 +1,68 @@
 .cards-wrapper {
-	
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	& > * {
+		margin-bottom: 15px;
+	}
 }
 
 .card {
-	@extend %mixin-card;
+	border-radius: 5px;
+	background-color: #fff;
 	padding: 20px;
-	width: 256px;
-	transition: box-shadow 0.1s ease-in;
+	width: 250px;
+	transition: box-shadow 0.1s ease-in, transform 0.2s ease-in, color 0.2s ease-in, border-bottom 0.2s ease-in;
 
 	&:hover {
-		// transform: translateY(-4px);
-		box-shadow: 0 3px 10px rgba(0, 0, 0, 10);
-		background-color: #303030;
+		transform: translateY(-4px);
+		box-shadow: 0 3px 10px rgba(24, 117, 240, 10);
+
+		.card__title {
+			color: $blue;
+			cursor: pointer;
+		}
+
+		.icon__cart {
+			fill: $blue;
+			cursor: pointer;
+		}
+
+		.card_price {
+			color: black;
+			cursor: default;
+		}
+
+		.card__img {
+			border-bottom: 1px solid $blue;
+			border-radius: 10px;
+		}
 	}
+
 }
 
 .card__header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	margin-bottom: 24px;
 }
 
 .card__sale {
 	// height: 21px;
 	border-radius: 4px;
-	background-color: $back_bgc;
+	background-color: $dc-txt;
 	padding: 6px 10px;
 
-	color: $dc-txt;
+	color: $c-txt;
 	font-weight: 900;
 	font-size: 10px;
 	line-height: 1;
 	text-transform: uppercase;
 
 	&:hover {
-		color: $c-txt;
+		color: #fff;
 		background-color: $blue;
 		transition: 0.2s color ease-in, 0.2s background-color ease-in;
 		cursor: default;
@@ -58,3 +86,48 @@
 		cursor: pointer;
 	}
 }
+
+.card__img {
+	height: 235px;
+	margin-bottom: 34px;
+	text-align: center;
+
+	img {
+		max-height: 180px;
+		max-width: 220px;
+		border-radius: 5px;
+	}
+
+}
+
+.card__title {
+	margin-bottom: 25px;
+	font-weight: 500;
+	line-height: 1;
+	text-align: center;
+	color: $dc-txt;
+}
+
+.card__footer {
+	display: flex;
+	justify-content: center;
+}
+
+.card_price {
+	color: $dc-txt;
+	font-size: 16px;
+	font-weight: 900;
+	line-height: 1.25;
+	letter-spacing: 0.16px;
+
+}
+
+.icon__cart {
+	margin-left: 17px;
+	padding: 0;
+	background: transparent;
+	border: none;
+	cursor: pointer;
+	fill: $dc-txt;
+}
+
