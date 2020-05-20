@@ -100,11 +100,15 @@
 	text-align: left;
 
 	.promo-section-item__title {
-		color: c-txt;
+		color: $c-txt;
 		font-size: 14px;
 		font-weight: 500;
 		line-height: 2.14;
 		margin: 0;
+
+		&:hover {
+			color: $blue;
+		}
 	}
 
 }

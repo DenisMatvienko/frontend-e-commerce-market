@@ -8,6 +8,10 @@
 
 // import blocks
 //------------------//
+
+//import logo
+@import "./blocks/_logo";
+
 // import header
 @import "./blocks/_header";
 
@@ -53,8 +57,14 @@
 // import Cards Product-list
 @import "./blocks/_card";
 
+// import footer
+@import "./blocks/_footer.scss";
+
+// import navigation in footer
+@import "./blocks/_nav-footer";
+
 
 
 // import mixins
 //------------------//
-@import "./mixins/_card"
+@import "./mixins/_card";
