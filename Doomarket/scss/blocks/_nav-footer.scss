@@ -16,6 +16,12 @@
 	& + & {
 		margin-left: 60px;
 	}
+
+	&:hover {
+		.footer-dropdown {
+			display: block;
+		}
+	}
 }
 
 .nav-footer__link {
@@ -66,14 +72,8 @@
 	background-color: $back_bgc;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 50);
 	border-radius: 5px;
+	z-index: 2;
 }
-
-.nav-footer:hover {
-	.footer-dropdown {
-		display: block;
-	}
-}
-
 
 .list-item {
 	margin-bottom: 20px;

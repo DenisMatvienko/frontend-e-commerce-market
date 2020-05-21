@@ -12,6 +12,9 @@
 //import logo
 @import "./blocks/_logo";
 
+// import button-up to top
+@import "./blocks/_button-up";
+
 // import header
 @import "./blocks/_header";
 
@@ -63,7 +66,14 @@
 // import navigation in footer
 @import "./blocks/_nav-footer";
 
+// import social icons
+@import "./blocks/_social";
 
+// import copyright info in footer
+@import "./blocks/_copyright";
+
+// import payment info in footer
+@import "./blocks/_payments";
 
 // import mixins
 //------------------//
