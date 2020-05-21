@@ -1,3 +1,5 @@
+/* Footer navigation start */
+
 .nav-footer {
 	
 }
@@ -67,8 +69,8 @@
 	text-align: center;
 	list-style: none;
 	position: absolute;
-	right: 830px;
-	left: 515px;
+	right: 800px;
+	left: 360px;
 	background-color: $back_bgc;
 	box-shadow: 0 10px 10px rgba(0, 0, 0, 50);
 	border-radius: 5px;
@@ -76,7 +78,11 @@
 }
 
 .list-item {
-	margin-bottom: 20px;
+
+	&:not(:last-child) {
+		margin-bottom: 20px;
+	}
+	
 }
 
 .list-link {
@@ -88,3 +94,5 @@
 		transition: 0.2s color ease-in;
 	}
 }
+
+/* Footer navigation end */

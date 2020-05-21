@@ -1,0 +1,49 @@
+/* Wish list start */
+
+#wishlist__block {
+	display: block;
+}
+
+.wishlist__title {
+	color: $c-txt;
+	font-size: 22px;
+	font-weight: 900;
+	line-height: 2;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	padding-left: 150px;
+	margin-bottom: 25px;
+
+		&:hover {
+		color: $blue;
+		transition: 0.2s color ease-in;
+		text-decoration: none;
+		cursor: pointer;
+	}
+}
+
+.wishlist__block-wrapper {
+	display: flex;
+	justify-content: center;
+	width: 1250px;
+	padding: 30px 41px 38px 23px;
+	background-color: $main_bgc;
+	margin: 15px 133px;
+	box-shadow: 0 3px 10px rgba(0, 0, 0, 50);
+}
+
+
+
+.wishlist__container {
+	margin-left: auto;
+	margin-right: auto;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	// padding: 30px 41px 38px 23px;
+}
+
+.card__wishlist {
+	margin-left: 20px;
+	margin-bottom: 20px;
+}

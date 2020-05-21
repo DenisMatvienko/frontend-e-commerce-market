@@ -1,3 +1,5 @@
+/* Banners infoblock start */
+
 .info-block {
 	@extend %mixin-card;
 	padding: 30px 20px;
@@ -66,3 +68,5 @@
 		url("./../img/banner/cell-phones.jpg");
 	}
 }
+
+/* Banners infoblock end */
