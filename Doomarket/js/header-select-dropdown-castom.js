@@ -35,8 +35,6 @@ selectAllElements.forEach(function(item){
 
 
 
-
-
 // // Прослушиваем клик внутри контейнера с селектом
 // selectElement.addEventListener("click", function(event){
 
