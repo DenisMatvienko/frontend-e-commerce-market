@@ -78,15 +78,31 @@
 }
 
 .card__icon-btn {
+	position: relative;
+	left: 46px;
 	padding: 0;
 	background: transparent;
 	border: none;
 	outline: none;
 	margin-left: 25px;
 	fill: $dc-txt;
+	z-index: 9;
 
 	&:hover {
-		// fill: $blue;
+		cursor: pointer;
+	}
+}
+
+.card__icon-btn---hover {
+	padding: 0;
+	background: transparent;
+	border: none;
+	outline: none;
+	margin-left: 25px;
+	fill: $blue;
+	z-index: 1;
+
+	&:hover {
 		cursor: pointer;
 	}
 }
