@@ -1,0 +1,86 @@
+.container__sign-in {
+	width: 360px;
+	height: 600px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	color: $c-txt;
+	text-align: center;
+
+	h1 {
+		font-size: 40px;
+		margin-top: 125px;
+		margin-bottom: 60px;
+		transition: color 0.2s ease-in;
+
+		&:hover {
+			color: $blue;
+			cursor:default;
+		}
+	}
+}
+
+.tbox {
+	width: 260px;
+	height: 40px;
+	background: $dc-txt;
+	border-radius: 10px;
+	margin: 10px auto;
+
+	input {
+		background: none;
+		border: none;
+		outline: none;
+		text-align: center;
+		width: 90%;
+		line-height: 37px;
+		font-size: 14px;
+		color:$c-txt;
+	}
+}
+
+.btn {
+	width: 260px;
+	height: 40px;
+	background: $blue;
+	border-radius: 10px;
+	margin: 14px auto;
+	display: block;
+	font-size: 16px;
+	color: $c-txt;
+	border: none;
+	cursor: pointer;
+}
+
+.b1 {
+	display: block;
+	width: 260px;
+	padding: 10px 0;
+	text-decoration: none;
+	color: $c-txt;
+	text-align: center;
+	margin: auto;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: $blue;
+	}
+}
+
+.b2 {
+	position: absolute;
+	bottom: 80px;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 260px;
+	padding: 10px 0;
+	margin-top: 20px;
+	text-decoration: none;
+	color: $c-txt;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: $blue;
+	}
+}

@@ -5,7 +5,9 @@
 	position: absolute;
 	background-color: $back-bgc;
 	height: 730px;
+	width: 100%;
 	top: 180px;
+	left: -45px;
 	z-index: 2;
 }
 
@@ -54,10 +56,10 @@
 .wishlist__block-wrapper {
 	display: flex;
 	overflow: auto;
-	width: 1251px;
-	padding: 50px 41px 38px 23px;
+	width: 1248px;
+	padding: 50px 41px 38px 26px;
 	background-color: $main_bgc;
-	margin: 15px 134px;
+	margin: 15px 180px;
 	box-shadow: 0 3px 10px rgba(0, 0, 0, 50);
 }
 
@@ -82,6 +84,7 @@
 	height: 550px;
 	margin-left: auto;
 	margin-right: auto;
+	padding-bottom: 100px;
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-between;
