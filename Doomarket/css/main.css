@@ -30,6 +30,7 @@ h1, h2, h3, h4, h5, h6, p {
 /* Logo start */
 .logo {
   color: #A6A6A6;
+  font-family: 'Mr Dafoe', cursive;
   font-size: 22px;
   font-weight: 900;
   line-height: 1;
@@ -1343,9 +1344,11 @@ a.nav-dropdown__dropdown-item {
     margin-left: 45px; }
   .main__column-left {
     display: none; }
-  .card {
+  .cards-wrapper {
     margin-left: 45px;
     margin-right: 45px; }
+  .card {
+    width: 320px; }
   .footer__row {
     margin-right: 45px;
     margin-left: 45px; }
@@ -1353,11 +1356,11 @@ a.nav-dropdown__dropdown-item {
     right: 600px;
     left: 150px; }
   .wishlist__block {
-    width: 1190px;
+    width: 100%;
     margin-top: 140px; }
   .wishlist__block-wrapper {
-    margin-left: 16px;
-    width: 1150px;
+    margin-left: 38px;
+    width: 100%;
     height: 980px; } }
 
 /* --Ширина экрана 1190px - все элементы страницы-- */
@@ -1399,19 +1402,22 @@ a.nav-dropdown__dropdown-item {
   .tabs {
     margin-right: 25px;
     margin-left: 25px; }
-  .card {
+  .cards-wrapper {
     margin-left: 25px;
     margin-right: 25px; }
+  .card {
+    width: 300px; }
   .footer__row {
     margin-right: 25px;
     margin-left: 25px; }
   .wishlist__block {
-    width: 1024px;
+    margin-left: 30px;
+    width: 100%;
     margin-top: 140px; }
   .wishlist__block-wrapper {
-    margin-left: 16px;
-    width: 950px;
-    height: 980px; } }
+    margin-left: 38px;
+    width: 100%;
+    height: 950px; } }
 
 /*-- Ширина экрана 1024px - все элементы страницы --*/
 /* Ширина экрана 768px - все элементы страницы */
@@ -1453,9 +1459,11 @@ a.nav-dropdown__dropdown-item {
   .tabs {
     margin-right: 15px;
     margin-left: 15px; }
-  .card {
+  .cards-wrapper {
     margin-left: 15px;
     margin-right: 15px; }
+  .card {
+    width: 340px; }
   .footer__row {
     margin-right: 15px;
     margin-left: 15px; }
@@ -1465,11 +1473,12 @@ a.nav-dropdown__dropdown-item {
     right: 500px;
     left: 15px; }
   .wishlist__block {
-    width: 768px;
+    margin-left: 35px;
+    width: 100%;
     margin-top: 140px; }
   .wishlist__block-wrapper {
     margin-left: 16px;
-    width: 700px;
+    width: 100%;
     height: 1285px; } }
 
 /*-- Ширина экрана 768px - все элементы страницы --*/
@@ -1506,9 +1515,11 @@ a.nav-dropdown__dropdown-item {
     margin-left: 8px;
     flex: 1 1 0;
     order: 3; }
+  .cards-wrapper {
+    margin-left: 10px;
+    margin-right: 10px; }
   .card {
-    justify-content: center;
-    text-align: center; }
+    width: 380px; }
   .footer__socials {
     display: none; }
   .wishlist__block {
@@ -1535,9 +1546,11 @@ a.nav-dropdown__dropdown-item {
     width: 375px; }
   .nav-categories__dropdown {
     width: 180px; }
+  .cards-wrapper {
+    margin-left: 10px;
+    margin-right: 10px; }
   .card {
-    justify-content: center;
-    text-align: center; }
+    width: 300px; }
   .footer__socials {
     display: none; }
   .wishlist__block {
@@ -1559,7 +1572,7 @@ a.nav-dropdown__dropdown-item {
   color: #A6A6A6;
   text-align: center; }
   .container__sign-in h1 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 125px;
     margin-bottom: 60px;
     transition: color 0.2s ease-in; }
@@ -1584,16 +1597,30 @@ a.nav-dropdown__dropdown-item {
     color: #A6A6A6; }
 
 .btn {
+  position: relative;
+  display: inline-block;
+  color: #2196f3;
+  background-color: #1A1A1A;
   width: 260px;
   height: 40px;
-  background: #1875f0;
-  border-radius: 10px;
-  margin: 14px auto;
-  display: block;
-  font-size: 16px;
-  color: #A6A6A6;
+  letter-spacing: 1px;
+  text-decoration: none;
+  font-size: 24px;
+  overflow: hidden;
+  margin: 20px auto;
   border: none;
-  cursor: pointer; }
+  border-radius: 10px;
+  outline: none;
+  transition: 0.5s; }
+  .btn:hover {
+    color: #14355A;
+    background-color: #1F5089;
+    box-shadow: 0 0 10px #1C4A7D, 0 0 40px #1C4A7D, 0 0 80px #1C4A7D;
+    transition-delay: 0.1s;
+    cursor: pointer; }
+
+.logo__size {
+  font-size: 50px; }
 
 .b1 {
   display: block;
@@ -1619,6 +1646,16 @@ a.nav-dropdown__dropdown-item {
   color: #A6A6A6;
   transition: color 0.2s ease-in; }
   .b2:hover {
+    color: #1875f0; }
+
+.b3 {
+  width: 260px;
+  padding: 10px 0;
+  margin-top: 50px;
+  text-decoration: none;
+  color: #A6A6A6;
+  transition: color 0.2s ease-in; }
+  .b3:hover {
     color: #1875f0; }
 
 /* Mixin to create form display of items start */
