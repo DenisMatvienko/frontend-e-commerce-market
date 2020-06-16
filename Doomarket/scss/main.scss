@@ -79,10 +79,15 @@
 @import "./blocks/_wish-list";
 
 // import adaptive media
-@import "./blocks/_media-adaptive";
+@import "./blocks/_media-adaptive.scss";
 
 // import create sign in page
 @import "./blocks/_sign-in.scss";
+
+// import product cart
+@import "./blocks/_product-detail.scss";
+
+
 
 
 // import mixins
